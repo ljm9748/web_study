@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--모바일/웹환경 자유롭게 전환하는 용-->
+    <title>CSS 속성</title>
+    <style>
+        h1.title {
+            background-color: black;
+            color: aliceblue;
+            font-size: 24px;
+        }
+    </style>
+    <style>
+        #size1>div:nth-child(1) {
+            font-size: 100%;
+        }
+        
+        #size1>div:nth-child(2) {
+            font-size: 150%;
+        }
+        
+        #size1>div:nth-child(3) {
+            font-size: 200%;
+        }
+        
+        #size2>div:nth-child(1) {
+            font-size: 1.0em;
+        }
+        
+        #size2>div:nth-child(2) {
+            font-size: 1.5em;
+        }
+        
+        #size2>div:nth-child(3) {
+            font-size: 2.0em;
+        }
+        
+        #size3>div:nth-child(1) {
+            font-size: 16px;
+        }
+        
+        #size3>div:nth-child(2) {
+            font-size: 24px;
+        }
+        
+        #size3>div:nth-child(3) {
+            font-size: 32px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="title">Font size : 단위를 확인</h1>
+    <div>
+        <div id="size1">
+            <div>font-size : 100%</div>
+            <div>font-size : 150%</div>
+            <div>font-size : 100%</div>
+        </div>
+
+        <div id="size2">
+            <div>font-size : 1.0em</div>
+            <div>font-size : 1.5em</div>
+            <div>font-size : 2.0em</div>
+        </div>
+
+        <div id="size3">
+            <div>font-size : 16px</div>
+            <div>font-size : 24px</div>
+            <div>font-size : 32px</div>
+        </div>
+    </div>
+</body>
+
+</html>

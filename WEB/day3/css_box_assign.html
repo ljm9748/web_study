@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        .box {
+            width: 50px;
+            height: 50px;
+            border: 2px solid black;
+            text-align: center;
+            line-height: 50px;
+            font-weight: bold;
+            color: white;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        #wrap>div:nth-child(1) {
+            left: 10px;
+            top: 10px;
+            background-color: red;
+        }
+        
+        #wrap>div:nth-child(2) {
+            left: 10px;
+            bottom: 10px;
+            background-color: green;
+        }
+        
+        #wrap>div:nth-child(3) {
+            right: 10px;
+            top: 10px;
+            background-color: blue;
+        }
+        
+        #wrap>div:nth-child(4) {
+            right: 10px;
+            bottom: 10px;
+            background-color: purple;
+        }
+        
+        #wrap {
+            height: 300px;
+            width: 500px;
+            background-color: aqua;
+            overflow: auto;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>header</h1>
+    <div id="wrap">
+        <div id="box1" class="box">red</div>
+        <div id="box2" class="box">green</div>
+        <div id="box3" class="box">blue</div>
+        <div id="box4" class="box">purple</div>
+    </div>
+</body>
+
+</html>
