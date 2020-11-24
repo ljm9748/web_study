@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자</title>
+    <script></script>
+    <style>
+        p {
+            background-color: black;
+            color: red;
+        }
+        
+        .color_white {
+            color: white;
+        }
+        
+        .font_32 {
+            font-size: 32pt;
+        }
+        /*
+        후손선택자: 선택자 a 선택자 b
+        a테그 하위에 존재하는 테그를 기준으로 b선택자로 선택
+        #header1 h1{
+            여기에 내용
+        }
+
+        자손선택자 : 선택자 a(부모) > 선택자 b(자손) + 자손이 후손에 속함!
+        선택자 a로 선택된 테그 바로 아래의 테그들 중 b테그로 선택
+
+        동위선택자: 범위를 한정해서 선택
+        선택자 a + 선택자 b : a선택의 테그 바로 뒤에있는 선택자 b
+        */
+        
+        #div1>h1+h2 {
+            background-color: red;
+        }
+        
+        #div1>h1~h2 {
+            background-color: pink;
+        }
+        /*
+        반응 선택자
+        -hover:마우스 커서가 특정 테그 위로 올라갈때
+        -active: 마우스 버튼 누르고있는 상태
+        */
+        
+        h1:hover {
+            background-color: aqua;
+            cursor: pointer;
+        }
+        
+        #div1 {}
+        
+        input[type=checkboc]: checked+div {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="color_white font_32">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis earum quod dolorum dolore? Distinctio architecto corporis quaerat maiores recusandae culpa officia veniam, obcaecati, dicta enim mollitia, accusantium vero possimus harum?</p>
+
+    <input type="checkbox">
+    <div id="div1">
+        <h1>This is heading 1</h1>
+        <h2>This is heading 2</h2>
+        <h2>This is heading 2</h2>
+        <h2>This is heading 2</h2>
+        <h3>This is heading 3</h3>
+        <h4>This is heading 4</h4>
+        <h5>This is heading 5</h5>
+        <h6>This is heading 6</h6>
+
+
+
+    </div>
+</body>
+
+</html>

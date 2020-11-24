@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form_tag</title>
+    <style></style>
+    <script></script>
+</head>
+
+<body>
+    <h1>Form Tag</h1>
+    <hr>
+    <form action="#" method="get">
+        <!-- 
+            서버로 전송하고자 하는 폼 데이터를 묶는다 
+            action: 데이터를 전송할 경로(위치)
+            method: 전송방식(get/post)
+            label: 텍스트 입력방식, 특정 아이디의 input으로 focus이동시킬 수 있다
+        -->
+        <label>type = text:</label>
+        <input type="text" name="username">
+        <br> type = password:
+        <input type="password" name="userpassword">
+        <br> type = checkbox:
+        <input type="checkbox" name="chk" value="ok1">
+        <input type="checkbox" name="chk" value="ok2">
+        <br> type= radio:<label for="A">A</label>
+        <input type="radio" name="choice" value="A" id="A"> B
+        <input type="radio" name="choice" value="B"> C
+        <input type="radio" name="choice" value="C"> D
+        <input type="radio" name="choice" value="D"> F
+        <input type="radio" name="choice" value="F"><br> type= color:
+        <input type="color" name="color"><br> type=datetime-local:
+        <input type="datetime-local" name: "datetime-local"><br> type=date:
+        <input type="date" name: "date"><br> type=month:
+        <input type="month" name: "month"><br>type=time:
+        <input type="time" name: "time"><br> type=file:
+        <input type="file" name: "file"><br> type=email:
+        <input type="email" name: "email"><br> type=hidden: 화면에는 표현되지 않는다
+        <input type="hidden" name: "hidden"><br>type=number:문자는 입력이 안받아진다
+        <input type="number" name: "num"><br> 생일
+        <select>
+            <option value="1997">1997년</option> <!--이경우 value는 1997-->
+            <option>1998</option> <!--이경우 value는 1998-->
+        </select>년
+
+
+        <br>
+        <input type="submit">
+        <input type="reset" value="초기화">
+
+    </form>
+
+</body>
+
+</html>
